@@ -13,9 +13,6 @@ describe("My Login application", () => {
     console.log("fix bug");
     console.log("new branch add");
     console.log("fix bug");
-    console.log("new branch add");
-    console.log("fix bug");
-    console.log("new branch add");
-    console.log("fix bug");
+    console.log("new ficsing");
   });
 });

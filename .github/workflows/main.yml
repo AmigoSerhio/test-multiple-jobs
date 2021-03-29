@@ -1,16 +1,9 @@
 name: actionTest
 
-on: [push, pull_request]
-
+on: [push]
 jobs:
-  e2e-test-on-ubuntu-with-local-chrome:
+  check-bats-version:
     runs-on: ubuntu-latest
-    #runs-on: macos-latest
-    #runs-on: windows-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup
-        run: npm install
-      - name: Test
-        run: npm run test
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1

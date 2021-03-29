@@ -1,0 +1,19 @@
+name: wdioTestActions
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  prepair:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        with:
+            args: npm install
+      - name: run tests
+        with:
+            args: npm run test

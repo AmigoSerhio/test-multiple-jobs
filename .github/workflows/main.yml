@@ -1,11 +1,28 @@
-name: CI
-on:
-  push:
-    branches:
-      - main
+name: actionTest
+
+on: [push, pull_request]
+
 jobs:
-  build:
+  e2e-test-on-ubuntu-with-local-chrome:
     runs-on: ubuntu-latest
+    #runs-on: macos-latest
+    #runs-on: windows-latest
     steps:
       - name: Checkout
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
+      - name: Setup
+        run: npm install
+      - name: Test
+        run: npm run clear-test -- "wdio-configs/wdio.conf.chrome.chromedriver.headless.js --cucumberOpts.tagExpression=@myTests"
+        env:
+          ENV_PATH: environment/QS
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v2
+        with:
+          name: reports
+          path: tests/reports/
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: log/

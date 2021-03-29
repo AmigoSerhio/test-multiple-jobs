@@ -13,7 +13,7 @@ jobs:
       - name: Setup
         run: npm install
       - name: Test
-        run: npm run clear-test -- "wdio-configs/wdio.conf.chrome.chromedriver.headless.js --cucumberOpts.tagExpression=@myTests"
+        run: npm run test
         env:
           ENV_PATH: environment/QS
       - name: Upload Test Reports

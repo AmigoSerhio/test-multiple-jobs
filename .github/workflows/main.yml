@@ -2,13 +2,14 @@ name: actionTest
 
 on: [push]
 jobs:
-  check-bats-version:
+  tests:
     runs-on: ubuntu-latest
+    name: Run WDIO test
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: "12.x"
-      - run: npm install
-      - run: npm run test
+      - name: Start selenoid
+        uses: Xotabu4/selenoid-github-action@v1
+      - uses: actions/checkout@v1
+      - name: Run Tests
+        env:
+          SELENIUM_HUB_HOST: "localhost"
+        run: npm cit

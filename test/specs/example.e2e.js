@@ -10,5 +10,6 @@ describe("My Login application", () => {
     expect(SecurePage.flashAlert).toHaveTextContaining("You logged into a secure area!");
     console.log("new change in project");
     console.log("new branch add");
+    console.log("fix bug");
   });
 });

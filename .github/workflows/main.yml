@@ -11,18 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Setup
-        run: npm ci
+        run: npm install
       - name: Test
         run: npm run test
-        env:
-          ENV_PATH: environment/QS
-      - name: Upload Test Reports
-        uses: actions/upload-artifact@v2
-        with:
-          name: reports
-          path: tests/reports/
-      - name: Upload Logs
-        uses: actions/upload-artifact@v2
-        with:
-          name: logs
-          path: log/

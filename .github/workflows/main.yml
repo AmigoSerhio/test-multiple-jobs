@@ -1,17 +1,19 @@
 name: actionTest
-
-on: [push]
+on:
+  push:
+  pull-request:
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
+  test-job:
+    runs-on: ubuntu-16.04
     steps:
       - uses: actions/checkout@v2
-      - name: Setup node
-        uses: actions/setup-node@v2
+      - uses: actions/setup-node@v1
+        name: "setup node"
         with:
-          node-version: "12.x"
-      - uses: actions/checkout@v1
-      - run: npm install
-      - name: Run Tests
-      #- run: npm ci
-      - run: npm test
+          node-version: "13.x"
+
+      - name: "install"
+        run: npm i
+
+      - name: "test"
+        run: npm run test

@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Setup node
+      - name: "Setup_node"
         uses: actions/setup-node@v2
         with:
           node-version: "12.x"
-      - name: Setup test
+      - name: "Setup_test"
       - uses: actions/checkout@v1
-      - name: List directory
+      - name: "List_directory"
       - run: ls
       # - name: Install
       # - run: npm i

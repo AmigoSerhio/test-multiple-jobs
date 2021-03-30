@@ -1,21 +1,17 @@
 name: actionTest
 
 on: [push]
-
-  jobs:
-  tests:
+jobs:
+  check-bats-version:
     runs-on: ubuntu-latest
-    name: Run WDIO test
-    strategy:
-      matrix:
-        node-version: [12.x]
     steps:
-      - name: Start
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
         with:
-          node-version: $({ matrix.node-version})
+          node-version: "12.x"
       - uses: actions/checkout@v1
+      - run: npm install
       #- name: Run Tests
       #- run: npm ci
       #- run: npm test

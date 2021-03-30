@@ -8,11 +8,6 @@ describe("My Login application", () => {
     LoginPage.login("tomsmith", "SuperSecretPassword!");
     expect(SecurePage.flashAlert).toBeExisting();
     expect(SecurePage.flashAlert).toHaveTextContaining("You logged into a secure area!");
-    console.log("new change in project");
-    console.log("new branch add");
-    console.log("fix bug");
-    console.log("new branch add");
-    console.log("fix bug");
-    console.log("new ficsing");
+    browser.url("https://artstroy.net");
   });
 });

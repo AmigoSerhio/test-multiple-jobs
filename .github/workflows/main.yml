@@ -9,12 +9,12 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
         with:
-          node-version: "12.x"
+          node-version: "13.x"
       - uses: actions/checkout@v1
       - name: Read directory
       - run: ls
       - name: Install
-      - run: npm ci
+      - run: npm install
       - name: Run Tests
       #- run: npm ci
       #- run: npx wdio run wdio.conf.js

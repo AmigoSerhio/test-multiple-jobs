@@ -3,10 +3,10 @@ name: actionTest
 on: [push]
 jobs:
   check-bats-version:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: Xotabu4/selenoid-github-action@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: "12.x"
       - uses: actions/checkout@v1

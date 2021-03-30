@@ -4,14 +4,14 @@ on:
   pull-request:
 jobs:
   test-job:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         name: "setup node"
         with:
           node-version: "13.x"
-
+      - uses: actions/checkout@v1
       - name: "install"
         run: npm i
 

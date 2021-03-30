@@ -12,6 +12,6 @@ jobs:
           node-version: "12.x"
       - uses: actions/checkout@v1
       - run: npm install
-      - name: Run Tests
+      #- name: Run Tests
       #- run: npm ci
-      #- run: node -v
+      #- run: npm test

@@ -12,8 +12,9 @@ jobs:
         with:
           node-version: "13.x"
       - uses: actions/checkout@v1
-      - name: "install"
-        run: npm i
+      - run: node -v
+      # - name: "install"
+      #   run: npm i
 
-      - name: "test"
-        run: npm run test
+      # - name: "test"
+      #   run: npm run test

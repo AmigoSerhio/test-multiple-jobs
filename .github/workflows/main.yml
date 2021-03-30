@@ -10,9 +10,8 @@ jobs:
       - uses: actions/setup-node@v2
         name: "setup node"
         with:
-          node-version: "13.x"
+          node-version: "12.x"
       - uses: actions/checkout@v1
-      # - run: node -v
       # - name: "install"
       #   run: npm i
 

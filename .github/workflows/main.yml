@@ -13,7 +13,7 @@ jobs:
           node-version: "13.x"
 
       - name: "install"
-        run: npm i
+        run: npm install
 
       - name: "test"
         run: npm run test

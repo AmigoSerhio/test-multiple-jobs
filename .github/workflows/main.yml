@@ -1,11 +1,7 @@
 name: actionTest
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    - main
+on: [push]
+
   jobs:
   tests:
     runs-on: ubuntu-latest

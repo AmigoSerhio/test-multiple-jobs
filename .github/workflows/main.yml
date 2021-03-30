@@ -3,12 +3,12 @@ name: actionTest
 on: [push]
 jobs:
   check-bats-version:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - uses: Xotabu4/selenoid-github-action@v1
-      # - uses: actions/setup-node@v2
-      #   with:
-      #     node-version: "12.x"
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12.x"
       - uses: actions/checkout@v1
       - run: ls
       - run: npm i

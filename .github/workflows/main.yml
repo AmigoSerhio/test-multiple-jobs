@@ -11,8 +11,10 @@ jobs:
         with:
           node-version: "12.x"
       - uses: actions/checkout@v1
+      - name: Read directory
       - run: ls
-      #- run: npm install
-      #- name: Run Tests
+      - name: Install
+      - run: npm install
+      - name: Run Tests
       #- run: npm ci
-      #- run: npm test
+      - run: npx wdio run wdio.conf.js

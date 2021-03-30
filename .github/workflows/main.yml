@@ -1,19 +1,19 @@
-name: "test my project"
-on:
-  push:
-  pull-request:
+name: actionTest
+
+on: [push]
 jobs:
-  test-job:
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        name: "setup node"
+      - name: Setup node
+        uses: actions/setup-node@v2
         with:
           node-version: "12.x"
+      - name: Setup tests
       - uses: actions/checkout@v1
-      # - name: "install"
-      #   run: npm i
+      - name: Install
+        run: npm i
 
       # - name: "test"
       #   run: npm run test

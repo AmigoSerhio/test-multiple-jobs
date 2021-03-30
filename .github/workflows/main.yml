@@ -13,7 +13,7 @@ jobs:
       - name: Setup tests
       - uses: actions/checkout@v1
       - name: Install
-        run: npm i
+      - run: npm i
 
       # - name: "test"
       #   run: npm run test

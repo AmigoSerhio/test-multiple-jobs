@@ -14,5 +14,5 @@ jobs:
       - name: Chekout1
         uses: actions/checkout@v1
       - run: ls
-      - run: npm ci
+      - run: npm i
       - run: npm run test

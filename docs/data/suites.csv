@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jul 12 19:27:11 UTC 2021","Mon Jul 12 19:27:11 UTC 2021","56","","Check login page defaults","","Check login page defaults","Ispect footer text","Ispect footer text",""
+"passed","Mon Jul 12 19:27:11 UTC 2021","Mon Jul 12 19:27:12 UTC 2021","74","","Check login page defaults","","Check login page defaults","Verify Footer link","Verify Footer link",""
+"passed","Mon Jul 12 19:27:11 UTC 2021","Mon Jul 12 19:27:11 UTC 2021","70","","Check login page defaults","","Check login page defaults","Check h2 header displayed","Check h2 header displayed",""

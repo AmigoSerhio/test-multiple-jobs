@@ -1,0 +1,31 @@
+[ {
+  "uid" : "3f64aec1f3d18b75",
+  "name" : "Ispect footer text",
+  "time" : {
+    "start" : 1626118031943,
+    "stop" : 1626118031999,
+    "duration" : 56
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a0e475c1fa77cb3",
+  "name" : "Check h2 header displayed",
+  "time" : {
+    "start" : 1626118031873,
+    "stop" : 1626118031943,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf161a443826c7d6",
+  "name" : "Verify Footer link",
+  "time" : {
+    "start" : 1626118031999,
+    "stop" : 1626118032073,
+    "duration" : 74
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

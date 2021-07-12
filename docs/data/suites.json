@@ -1,0 +1,48 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Check login page defaults",
+    "children" : [ {
+      "name" : "Check h2 header displayed",
+      "uid" : "9a0e475c1fa77cb3",
+      "parentUid" : "c3c13aa5235e1b95fa6d6bd3c3a89744",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626118031873,
+        "stop" : 1626118031943,
+        "duration" : 70
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.114" ]
+    }, {
+      "name" : "Ispect footer text",
+      "uid" : "3f64aec1f3d18b75",
+      "parentUid" : "c3c13aa5235e1b95fa6d6bd3c3a89744",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626118031943,
+        "stop" : 1626118031999,
+        "duration" : 56
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.114" ]
+    }, {
+      "name" : "Verify Footer link",
+      "uid" : "cf161a443826c7d6",
+      "parentUid" : "c3c13aa5235e1b95fa6d6bd3c3a89744",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626118031999,
+        "stop" : 1626118032073,
+        "duration" : 74
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.114" ]
+    } ],
+    "uid" : "c3c13aa5235e1b95fa6d6bd3c3a89744"
+  } ],
+  "name" : "suites"
+}

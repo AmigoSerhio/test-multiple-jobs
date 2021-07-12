@@ -1,2 +1,2 @@
-# wdioTestActions
+# wdioTestActionsSync
 wdioTestActions

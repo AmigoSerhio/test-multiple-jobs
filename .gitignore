@@ -3,3 +3,6 @@ node_modules/
 .idea
 allure-report/
 allure-results/
+
+#Dependency files
+package-lock.json

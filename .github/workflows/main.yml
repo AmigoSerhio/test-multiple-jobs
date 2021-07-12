@@ -1,18 +1,39 @@
-name: actionTest
+name: WDIO Tests
+on: 
+  push:
+    branches-ignore:
+    - '!master' # Push events to branches matching allure-report
+    paths-ignore:
+    - 'docs/**'
 
-on: [push]
 jobs:
   check-bats-version:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Node actions
         uses: actions/setup-node@v2
         with:
-          node-version: "12.x"
+          node-version: "14.x"
       - name: Chekout1
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - run: ls
       - run: npm i
       - run: npm run test
+      - name: Create Report
+        if: always()
+      # trying to save history of previous runs if it is exists
+        run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+         name: allure-report
+         path: ./allure-report
+      - name: Deploy report
+        uses: JamesIves/github-pages-deploy-action@3.1.0
+        if: always()
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: master # The branch the action should deploy to.
+          FOLDER: allure-report # The folder the action should deploy.
+          TARGET_FOLDER: docs

@@ -1,2 +1,5 @@
-node_modules
-package-lock.json
+# Dependency directories
+node_modules/
+.idea
+allure-report/
+allure-results/

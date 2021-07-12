@@ -1,0 +1,10 @@
+{
+    "superuser":{
+        "username":"super",
+        "password":"User"
+    },
+    "invalid_user": {
+        "username": "invalidUser",
+        "password": "invalidPassword!!!"
+    }
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # e2e-tests
 
 e2e-test for WebdriwerIO applications
@@ -20,3 +21,7 @@ All test cases should be coded inside the test folder. There you can organize te
 
 We work with the Page Object Pattern described in <https://webdriver.io/docs/pageobjects.html>. The main idea is to encapsulate logic into page classes and use the logic in the spec files to run the tests.
 For instance we defined the LoginPage and the element as attributes in a class and reuse them in the code.
+=======
+# wdioTestActionsSync
+wdioTestActions
+>>>>>>> 2d24575e105a2665a071d9e6793d2adb64499819

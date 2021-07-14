@@ -1,7 +1,7 @@
 {
     "superuser":{
-        "username":"super",
-        "password":"User"
+        "username":"admin",
+        "password":"admin"
     },
     "invalid_user": {
         "username": "invalidUser",

@@ -2,6 +2,7 @@ const Page = require('./Page');
 
 const h2Header = 'h2';
 const footerSelector = '#page-footer';
+const confirmMessage = "#content p";
 
 class LogInPage {
     getH2HeaderText(){
@@ -13,8 +14,13 @@ class LogInPage {
     isTitleDistpayed(){
         return Page.isElementDisplayed(h2Header)
     }
-   
-    
+    getPageText(){
+        browser.pause(10000);
+        return Page.getElementText("body");
+    }
+    getMessageText(){
+        return Page.getElementText(confirmMessage)
+    }
     //#region //links
     isLinkDisplayed(linkSelector){
         return Page.isElementDisplayed(linkSelector);

@@ -1,30 +1,70 @@
 [ {
-  "uid" : "3f64aec1f3d18b75",
-  "name" : "Ispect footer text",
+  "uid" : "63e853d09179a79c",
+  "name" : "Add element",
   "time" : {
-    "start" : 1626118031943,
-    "stop" : 1626118031999,
-    "duration" : 56
+    "start" : 1626166060586,
+    "stop" : 1626166060770,
+    "duration" : 184
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9a0e475c1fa77cb3",
+  "uid" : "172104296eaf45fd",
+  "name" : "Check h3 header displayed",
+  "time" : {
+    "start" : 1626166060411,
+    "stop" : 1626166060530,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "edbc7cb707d1002e",
   "name" : "Check h2 header displayed",
   "time" : {
-    "start" : 1626118031873,
-    "stop" : 1626118031943,
-    "duration" : 70
+    "start" : 1626166060430,
+    "stop" : 1626166060541,
+    "duration" : 111
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "cf161a443826c7d6",
+  "uid" : "adf5742c2085c49e",
+  "name" : "Remove element",
+  "time" : {
+    "start" : 1626166060770,
+    "stop" : 1626166060892,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5860f8f5dc22a400",
+  "name" : "Ispect footer text",
+  "time" : {
+    "start" : 1626166060541,
+    "stop" : 1626166060620,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae78ec65444ac784",
+  "name" : "Verify Add button",
+  "time" : {
+    "start" : 1626166060530,
+    "stop" : 1626166060578,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "36f4d52019e2eba",
   "name" : "Verify Footer link",
   "time" : {
-    "start" : 1626118031999,
-    "stop" : 1626118032073,
-    "duration" : 74
+    "start" : 1626166060621,
+    "stop" : 1626166060725,
+    "duration" : 104
   },
   "status" : "passed",
   "severity" : "normal"

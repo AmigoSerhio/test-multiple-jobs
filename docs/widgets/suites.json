@@ -1,5 +1,5 @@
 {
-  "total" : 4,
+  "total" : 5,
   "items" : [ {
     "uid" : "c3c13aa5235e1b95fa6d6bd3c3a89744",
     "name" : "Check login page defaults",
@@ -36,6 +36,17 @@
   }, {
     "uid" : "6bffc5c3b702dcd09ad58c584e2b28e2",
     "name" : "Basic Auth in modal",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "b905db4002c8c6dda459b8aae2298723",
+    "name" : "Verify broken images",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

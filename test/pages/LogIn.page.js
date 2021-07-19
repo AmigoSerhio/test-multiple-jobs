@@ -1,19 +1,10 @@
 const Page = require('./Page');
+const Base = require('./Base.js');
 
-const h2Header = 'h2';
 const footerSelector = '#page-footer';
 const confirmMessage = "#content p";
 
-class LogInPage {
-    getH2HeaderText(){
-        return Page.getElementText(h2Header);
-    }
-    waitTitleDistpayed(){
-        Page.waitUntilDisplayed(h2Header);
-    }
-    isTitleDistpayed(){
-        return Page.isElementDisplayed(h2Header)
-    }
+class LogInPage extends Base{
     getPageText(){
         browser.pause(10000);
         return Page.getElementText("body");

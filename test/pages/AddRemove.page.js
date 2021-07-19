@@ -1,9 +1,10 @@
 const Page = require('./Page');
+const Base = require('./Base.js');
 
 const addButton = "//button[text()='Add Element']";
 const deleteBtn = "#elements button";
 
-class AddRemovePage{
+class AddRemovePage extends Base{
   isAddBtnDisplayed(){
     return Page.isElementDisplayed(addButton);
   }

@@ -1,90 +1,90 @@
 [ {
-  "uid" : "5b030b604ebde5b8",
-  "name" : "Login with correct credential",
-  "time" : {
-    "start" : 1626679133421,
-    "stop" : 1626679134410,
-    "duration" : 989
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ff5a80f426814dfd",
-  "name" : "Check h3 header displayed",
-  "time" : {
-    "start" : 1626679134130,
-    "stop" : 1626679134259,
-    "duration" : 129
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1440098f9e1299d2",
-  "name" : "Verify Add button",
-  "time" : {
-    "start" : 1626679134259,
-    "stop" : 1626679134291,
-    "duration" : 32
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3c35797735bae113",
-  "name" : "Remove element",
-  "time" : {
-    "start" : 1626679134490,
-    "stop" : 1626679134648,
-    "duration" : 158
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d97ea09fa1f42ff7",
-  "name" : "Add element",
-  "time" : {
-    "start" : 1626679134302,
-    "stop" : 1626679134490,
-    "duration" : 188
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "41a750713df72a4b",
+  "uid" : "3d822cde69da213f",
   "name" : "Check h2 header displayed",
   "time" : {
-    "start" : 1626679137193,
-    "stop" : 1626679137263,
-    "duration" : 70
+    "start" : 1626780423523,
+    "stop" : 1626780423581,
+    "duration" : 58
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4a640f174996fc3b",
-  "name" : "Ispect footer text",
+  "uid" : "d52700caebf39b1",
+  "name" : "Add element",
   "time" : {
-    "start" : 1626679137263,
-    "stop" : 1626679137322,
-    "duration" : 59
+    "start" : 1626780421707,
+    "stop" : 1626780421835,
+    "duration" : 128
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "49bdbf7a8829efd2",
+  "uid" : "24eeb13fa854d9c0",
+  "name" : "Remove element",
+  "time" : {
+    "start" : 1626780421835,
+    "stop" : 1626780422007,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "878406ace3493bb1",
+  "name" : "Login with correct credential",
+  "time" : {
+    "start" : 1626780421396,
+    "stop" : 1626780421624,
+    "duration" : 228
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ece8b88118c5caf",
+  "name" : "Check h3 header displayed",
+  "time" : {
+    "start" : 1626780421560,
+    "stop" : 1626780421675,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "116129f95f795e84",
+  "name" : "Verify Add button",
+  "time" : {
+    "start" : 1626780421675,
+    "stop" : 1626780421702,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9ca31f79cb4ea35",
   "name" : "Verify Title",
   "time" : {
-    "start" : 1626679137013,
-    "stop" : 1626679137113,
-    "duration" : 100
+    "start" : 1626780422974,
+    "stop" : 1626780423051,
+    "duration" : 77
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "137b574453a80fa4",
+  "uid" : "f38530b801c5b7e6",
   "name" : "Verify Footer link",
   "time" : {
-    "start" : 1626679137322,
-    "stop" : 1626679137390,
-    "duration" : 68
+    "start" : 1626780423629,
+    "stop" : 1626780423687,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fddda10d649aff0f",
+  "name" : "Ispect footer text",
+  "time" : {
+    "start" : 1626780423581,
+    "stop" : 1626780423629,
+    "duration" : 48
   },
   "status" : "passed",
   "severity" : "normal"

@@ -1,7 +1,7 @@
 const exec = require('child_process').exec;
 const allure = require('allure-commandline');
 
-exports.config = {
+const wdioConfig = {
     runner: 'local',
     specs: [
         './test/specs/**/*.spec.js',
@@ -59,13 +59,11 @@ exports.config = {
     // =====
     // Hooks
     // =====
-    // onPrepare: function (config, capabilities) {
-    // },
-    //    onPrepare: function (config, capabilities) {
-    //         browser.maximizeWindow()
-    //     },
-
-    beforeSession: function (config, capabilities, specs) {
+    beforeSession: function(config, capabilities) {
+        if (process.env.DEBUG == "1") {
+            // Giving debugger some time to connect...
+            return new Promise(resolve => setTimeout(resolve, 10000));
+        }
     },
     beforeSession() { // before hook works as well
         require('expect-webdriverio').setOptions({
@@ -108,3 +106,12 @@ exports.config = {
         })
     }
 };
+
+if (process.env.DEBUG == "1") {
+    console.log("###### Running in debug mode! ######");
+    wdioConfig.maxInstances = 1
+    wdioConfig['execArgv'] = ["--inspect=127.0.0.1:5858"];
+    wdioConfig.mochaOpts.timeout = 360000;
+}
+
+module.exports.config = wdioConfig;

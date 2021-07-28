@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env TESTS_ENV=ui npm run config && ./node_modules/.bin/wdio config/wdio.chrome.headless.conf.js --spec test/specs/BrokenImages.spec.js",
-    "test1": "cross-env TESTS_ENV=ui npm run config && ./node_modules/.bin/wdio config/wdio.chrome.headless.conf.js --spec test/specs/Login.spec.js",
+    "test1": "cross-env TESTS_ENV=ui npm run config && ./node_modules/.bin/wdio config/wdio.chrome.headless.conf.js --spec test/specs/AddRemoveElement.spec.js",
     "config": "sh -ac 'if test \"$TESTS_ENV\"; then cp environments/env.${TESTS_ENV}.json.template environments/env.json; fi'",
     "test:chrome:headless:ui": "cross-env TESTS_ENV=ui npm run config && ./node_modules/.bin/wdio config/wdio.chrome.headless.conf.js",
     "test:chrome:ui": "cross-env TESTS_ENV=ui npm run config && ./node_modules/.bin/wdio config/wdio.chrome.conf.js  --spec test/specs/BrokenImages.spec.js",

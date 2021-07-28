@@ -1,3 +1,4 @@
+  
 name: Test and create report
 
 on:
@@ -23,17 +24,29 @@ jobs:
     - run: npm i
     - name: run test
       run: npm run test
+    - name: Create Report
+      if: always()
+    # trying to save history of previous runs if it is exists
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
     - name: Upload Artifact
       uses: actions/upload-artifact@v1
       if: always()
       with:
-        name: allure-results-test
-        path: ./allure-results
+        name: allure-report
+        path: ./allure-report
+    - name: Deploy report
+      uses: JamesIves/github-pages-deploy-action@3.1.0
+      if: always()
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: allure-report # The folder the action should deploy.
+        TARGET_FOLDER: docs
   test1:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 14.17.0 ]
+        node-version: [14.17.0]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v2
@@ -45,39 +58,23 @@ jobs:
     - run: npm i
     - name: run test1
       run: npm run test1
+    - name: Create Report
+      if: always()
+    # trying to save history of previous runs if it is exists
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
     - name: Upload Artifact
       uses: actions/upload-artifact@v1
       if: always()
       with:
-        name: allure-results-test
-        path: ./allure-results
-  store_results_and_generate_report:
-    runs-on: ubuntu-20.04
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '12'
-    - run: npm ci
-    - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v2
-    - name: 'Echo download path'
-      run: echo ${{steps.download.outputs.download-path}}
-    - name: Display structure of downloaded files
-      run: ls -R
-    - name: Unpack artifacts
-      if: always()
-      run: 7z x allure-results-test ./allure-results && 7z x allure-results-test1 ./allure-results
-    - name: Generate allure-report
-      if: always()
-      run: npm run allure:generate
-    - name: Deploy Report
+        name: allure-report
+        path: ./allure-report
+    - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()
       with:
-        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        BRANCH: master
-        FOLDER: allure-report
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: allure-report # The folder the action should deploy.
         TARGET_FOLDER: docs
     - name: Pushes docs to another repository
       uses: cpina/github-action-push-to-another-repository@main

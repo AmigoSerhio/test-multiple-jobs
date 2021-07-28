@@ -51,7 +51,7 @@ jobs:
       with:
         name: allure-results-test
         path: ./allure-results
-  store_results_and_generate report:
+  store_results_and_generate_report:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2

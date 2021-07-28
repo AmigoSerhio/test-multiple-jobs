@@ -43,6 +43,7 @@ jobs:
         FOLDER: allure-report # The folder the action should deploy.
         TARGET_FOLDER: docs
   test1:
+    needs: test
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -80,7 +81,7 @@ jobs:
       uses: cpina/github-action-push-to-another-repository@main
       if: always()
       env:
-        API_TOKEN_GITHUB: ${{'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'}}
+        API_TOKEN_GITHUB: ${{secrets.API_TOKEN_GITHUB}}
       with:
         source-directory: 'docs'
         destination-github-username: 'ToActions'

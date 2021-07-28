@@ -80,7 +80,7 @@ jobs:
       uses: cpina/github-action-push-to-another-repository@main
       if: always()
       env:
-        API_TOKEN_GITHUB: ${{'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'}}
+        API_TOKEN_GITHUB: ${{secrets.TO_ACTIONS}}
       with:
         source-directory: 'docs'
         destination-github-username: 'ToActions'

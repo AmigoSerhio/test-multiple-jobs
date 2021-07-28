@@ -3,13 +3,39 @@
   "children" : [ {
     "name" : "0-0",
     "children" : [ {
-      "name" : "Verify Add button",
-      "uid" : "2cdc12170b31608",
+      "name" : "Add element",
+      "uid" : "afb372a2a483eaaa",
       "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
       "status" : "passed",
       "time" : {
-        "start" : 1627481932081,
-        "stop" : 1627481932127,
+        "start" : 1627482713352,
+        "stop" : 1627482713608,
+        "duration" : 256
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "Remove element",
+      "uid" : "32134b2fd38ebafd",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627482713608,
+        "stop" : 1627482713775,
+        "duration" : 167
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "Verify Add button",
+      "uid" : "2aead3b05e9ee6a7",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627482713298,
+        "stop" : 1627482713344,
         "duration" : 46
       },
       "flaky" : false,
@@ -17,39 +43,13 @@
       "parameters" : [ "chrome-91.0.4472.164" ]
     }, {
       "name" : "Check h3 header displayed",
-      "uid" : "a8daf3647d6e1752",
+      "uid" : "35a766660f7b61a8",
       "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
       "status" : "passed",
       "time" : {
-        "start" : 1627481931929,
-        "stop" : 1627481932080,
-        "duration" : 151
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-91.0.4472.164" ]
-    }, {
-      "name" : "Add element",
-      "uid" : "4711fb78554e0fea",
-      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1627481932134,
-        "stop" : 1627481932321,
-        "duration" : 187
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-91.0.4472.164" ]
-    }, {
-      "name" : "Remove element",
-      "uid" : "fa97d8b64014c16a",
-      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1627481932321,
-        "stop" : 1627481932511,
-        "duration" : 190
+        "start" : 1627482713179,
+        "stop" : 1627482713298,
+        "duration" : 119
       },
       "flaky" : false,
       "newFailed" : false,

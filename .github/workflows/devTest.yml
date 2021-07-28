@@ -38,7 +38,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()
       with:
-        ACCESS_TOKEN: ${{ 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 }}
+        ACCESS_TOKEN: ${{ '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' }}
         BRANCH: master # The branch the action should deploy to.
         FOLDER: allure-report # The folder the action should deploy.
         TARGET_FOLDER: docs

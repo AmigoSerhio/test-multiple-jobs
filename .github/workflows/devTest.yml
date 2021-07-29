@@ -102,6 +102,7 @@ jobs:
       run: cp -r allure-results-test/. ./allure-results && cp -r allure-results-test1/. ./allure-results   
     - name: Display structure of downloaded files
       run: ls -R
+    - uses: actions/checkout@v2
     - name: Generate allure-report
       if: always()
       run: npm run allure:generate

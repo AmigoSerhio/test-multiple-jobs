@@ -4,13 +4,13 @@
     "name" : "Verify broken images",
     "children" : [ {
       "name" : "Verify Title",
-      "uid" : "a925b0f2b2095a5e",
+      "uid" : "7da5dc65627c1256",
       "parentUid" : "b905db4002c8c6dda459b8aae2298723",
       "status" : "passed",
       "time" : {
-        "start" : 1627543726025,
-        "stop" : 1627543726120,
-        "duration" : 95
+        "start" : 1627544312096,
+        "stop" : 1627544312198,
+        "duration" : 102
       },
       "flaky" : false,
       "newFailed" : false,

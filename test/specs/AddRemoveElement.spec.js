@@ -14,7 +14,7 @@ before('land to main url', () => {
 describe('Check Add Remove elements page defaults', () => {
   //#region //Inspect login form
   it('Check h3 header displayed', () => {
-    expect(addRemovePage.isTitleDistpayed(h3Title)).true;
+    expect(addRemovePage.isTitleDistpayed(h3Title)).false;
     expect(addRemovePage.getHeaderText(h3Title)).contain(h3TitleTex);
   });
   it('Verify Add button',()=>{

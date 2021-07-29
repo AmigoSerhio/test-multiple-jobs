@@ -81,7 +81,7 @@ jobs:
     - uses: actions/download-artifact@v2
     - name: Unpack artifacts
       if: always()
-      run: cp -r allure-results-test/* | history ./allure-results && cp -r allure-results-test1/* | history ./allure-results
+      run: cp -r allure-results-test/.* ./allure-results && cp -r allure-results-test1/.* ./allure-results
     - name: Display structure of downloaded files
       run: ls -R
     - name: Generate Report

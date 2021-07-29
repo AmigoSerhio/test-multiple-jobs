@@ -78,7 +78,9 @@ jobs:
         path: ./allure-results
 #     - uses: actions/checkout@v2
 #     - run: npm i
-    - uses: actions/download-artifact@v2
+    - name: Download artifacts
+      if: always()
+      uses: actions/download-artifact@v2
     - name: Unpack artifacts
       if: always()
       run: cp -r $(pwd)/allure-results-test/*.* $(pwd)/allure-results/ && cp -r $(pwd)/allure-results-test1/*.* $(pwd)/allure-results/

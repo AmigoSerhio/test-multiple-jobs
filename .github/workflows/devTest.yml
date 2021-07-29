@@ -65,8 +65,8 @@ jobs:
     - run: npm i
     - name: run test1
       run: npm run test1
-    - name: Display structure of downloaded files
-      run: ls -R
+#     - name: Display structure of downloaded files
+#       run: ls -R
     - name: Copy History
       if: always()
       run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history

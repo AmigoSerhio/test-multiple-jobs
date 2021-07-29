@@ -1,11 +1,1 @@
-[ {
-  "uid" : "364b5cff73cbae15",
-  "name" : "Verify Title",
-  "time" : {
-    "start" : 1627574157302,
-    "stop" : 1627574157393,
-    "duration" : 91
-  },
-  "status" : "passed",
-  "severity" : "normal"
-} ]
+[ ]

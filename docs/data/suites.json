@@ -1,22 +1,5 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ {
-    "name" : "Verify broken images",
-    "children" : [ {
-      "name" : "Verify Title",
-      "uid" : "364b5cff73cbae15",
-      "parentUid" : "b905db4002c8c6dda459b8aae2298723",
-      "status" : "passed",
-      "time" : {
-        "start" : 1627574157302,
-        "stop" : 1627574157393,
-        "duration" : 91
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-92.0.4515.107" ]
-    } ],
-    "uid" : "b905db4002c8c6dda459b8aae2298723"
-  } ],
+  "children" : [ ],
   "name" : "suites"
 }

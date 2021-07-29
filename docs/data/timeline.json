@@ -1,22 +1,5 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "children" : [ {
-    "name" : "0-0",
-    "children" : [ {
-      "name" : "Verify Title",
-      "uid" : "364b5cff73cbae15",
-      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1627574157302,
-        "stop" : 1627574157393,
-        "duration" : 91
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-92.0.4515.107" ]
-    } ],
-    "uid" : "516fe00eea05ad99e936fa729b55eff4"
-  } ],
+  "children" : [ ],
   "name" : "timeline"
 }

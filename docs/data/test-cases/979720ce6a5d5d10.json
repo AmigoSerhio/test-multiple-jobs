@@ -1,0 +1,110 @@
+{
+  "uid" : "979720ce6a5d5d10",
+  "name" : "Check h3 header displayed",
+  "fullName" : "Check Add Remove elements page defaults.Check h3 header displayed",
+  "historyId" : "d88ba301e33ce660ab2b904ae10924b8",
+  "time" : {
+    "start" : 1627586364763,
+    "stop" : 1627586364935,
+    "duration" : 172
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected true to be false",
+  "statusTrace" : "AssertionError: expected true to be false\n                    at Context.<anonymous> (/home/runner/work/test-multiple-jobs/test-multiple-jobs/test/specs/AddRemoveElement.spec.js:17:52)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected true to be false",
+    "statusTrace" : "AssertionError: expected true to be false\n                    at Context.<anonymous> (/home/runner/work/test-multiple-jobs/test-multiple-jobs/test/specs/AddRemoveElement.spec.js:17:52)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cb4a0583fecdbacb",
+      "name" : "Screenshot",
+      "source" : "cb4a0583fecdbacb.png",
+      "type" : "image/png",
+      "size" : 27904
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Check Add Remove elements page defaults"
+  }, {
+    "name" : "testClass",
+    "value" : "Check Add Remove elements page defaults"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check h3 header displayed"
+  }, {
+    "name" : "package",
+    "value" : "Check Add Remove elements page defaults"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-92.0.4515.107"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "6c4785d39a26a746",
+        "status" : "failed",
+        "statusDetails" : "expected true to be false",
+        "time" : {
+          "start" : 1627586085797,
+          "stop" : 1627586085939,
+          "duration" : 142
+        }
+      }, {
+        "uid" : "3773bc33a0d15a80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627585547050,
+          "stop" : 1627585547132,
+          "duration" : 82
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "979720ce6a5d5d10.json",
+  "parameterValues" : [ "chrome-92.0.4515.107" ]
+}

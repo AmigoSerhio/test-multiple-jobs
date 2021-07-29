@@ -66,13 +66,11 @@ jobs:
     - uses: actions/download-artifact@v2
     - name: Unpack artifacts
       if: always()
-#       run: 7z x allure-results-test ./allure-results && 7z x allure-results-test1 ./allure-results
       run: cp -r allure-results-test/. ./allure-results 
     - name: Display structure of downloaded files
       run: ls -R
     - name: Copy History
       if: always()
-    # trying to save history of previous runs if it is exists
       run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history
     - name: Upload Artifact
       uses: actions/upload-artifact@v1

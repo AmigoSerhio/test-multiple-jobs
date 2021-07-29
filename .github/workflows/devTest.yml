@@ -27,7 +27,7 @@ jobs:
     - name: Copy History
       if: always()
     # trying to save history of previous runs if it is exists
-      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate      
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history 
     - name: Display structure of downloaded files
       run: ls -R
     - name: Upload Artifact
@@ -65,10 +65,6 @@ jobs:
     - run: npm i
     - name: run test1
       run: npm run test1
-    - uses: actions/download-artifact@v2
-    - name: Unpack artifacts
-      if: always()
-      run: cp -r allure-results-test/. ./allure-results 
     - name: Display structure of downloaded files
       run: ls -R
     - name: Copy History
@@ -81,6 +77,10 @@ jobs:
         name: allure-results-test1
         path: ./allure-results
     - uses: actions/checkout@v2
+    - uses: actions/download-artifact@v2
+    - name: Unpack artifacts
+      if: always()
+      run: cp -r allure-results-test/. ./allure-results 
     - name: Display structure of downloaded files
       run: ls -R
     - name: Generate Report

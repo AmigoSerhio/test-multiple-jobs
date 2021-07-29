@@ -28,6 +28,8 @@ jobs:
       if: always()
     # trying to save history of previous runs if it is exists
       run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history      
+    - name: Display structure of downloaded files
+      run: ls -R
     - name: Upload Artifact
       uses: actions/upload-artifact@v1
       if: always()
@@ -78,6 +80,9 @@ jobs:
       with:
         name: allure-results-test1
         path: ./allure-results
+    - uses: actions/checkout@v2
+    - name: Display structure of downloaded files
+      run: ls -R
     - name: Generate Report
       if: always()
       run: npm run allure:generate

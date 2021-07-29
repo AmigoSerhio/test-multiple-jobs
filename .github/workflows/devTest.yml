@@ -77,12 +77,18 @@ jobs:
 #         path: ./allure-report
   store_results_and_generate_report:
     needs: [test,test1]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.17.0]
+        # See supported Node.js release schedule at https://nodejs.org/en/
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
       with:
-        node-version: '12'
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - run: npm i
     - uses: actions/checkout@v2
     - uses: actions/download-artifact@v2
@@ -93,7 +99,9 @@ jobs:
     - name: Unpack artifacts
       if: always()
 #       run: 7z x allure-results-test ./allure-results && 7z x allure-results-test1 ./allure-results
-      run: cp -r allure-results-test ./allure-results && cp -r allure-results-test1 ./allure-results
+      run: cp -r allure-results-test ./allure-results && cp -r allure-results-test1 ./allure-results   
+    - name: Display structure of downloaded files
+      run: ls -R
     - name: Generate allure-report
       if: always()
       run: npm run allure:generate

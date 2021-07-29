@@ -23,24 +23,20 @@ jobs:
         cache: 'npm'
     - run: npm i
     - name: run test
-      run: npm run test
-      
+      run: npm run test      
     - name: Copy History
       if: always()
     # trying to save history of previous runs if it is exists
-      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history
-      
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history      
     - name: Upload Artifact
       uses: actions/upload-artifact@v1
       if: always()
       with:
         name: allure-results-test
-        path: ./allure-results
-        
+        path: ./allure-results        
     - name: Generate Report
       if: always()
-    - run: npm run allure:generate
-    
+      run: npm run allure:generate    
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()
@@ -86,7 +82,7 @@ jobs:
         path: ./allure-results
     - name: Generate Report
       if: always()
-    - run: npm run allure:generate
+      run: npm run allure:generate
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()

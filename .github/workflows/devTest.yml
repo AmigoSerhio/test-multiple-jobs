@@ -99,7 +99,7 @@ jobs:
     - name: Unpack artifacts
       if: always()
 #       run: 7z x allure-results-test ./allure-results && 7z x allure-results-test1 ./allure-results
-      run: cp -r allure-results-test/ ./allure-results && cp -r allure-results-test1/ ./allure-results   
+      run: cp -r allure-results-test/. ./allure-results && cp -r allure-results-test1/. ./allure-results   
     - name: Display structure of downloaded files
       run: ls -R
     - name: Generate allure-report

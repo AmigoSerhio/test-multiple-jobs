@@ -1,1 +1,51 @@
-[ ]
+[ {
+  "uid" : "76f5793fae6219f8",
+  "name" : "Add element",
+  "time" : {
+    "start" : 1627546531507,
+    "stop" : 1627546531723,
+    "duration" : 216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "418bab491bfafaaa",
+  "name" : "Remove element",
+  "time" : {
+    "start" : 1627546531723,
+    "stop" : 1627546531869,
+    "duration" : 146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "362a95544bb3e8ff",
+  "name" : "Check h3 header displayed",
+  "time" : {
+    "start" : 1627546531341,
+    "stop" : 1627546531461,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3956ce646bfdf1d1",
+  "name" : "Verify Title",
+  "time" : {
+    "start" : 1627546469587,
+    "stop" : 1627546469722,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4df5d82586725e6",
+  "name" : "Verify Add button",
+  "time" : {
+    "start" : 1627546531461,
+    "stop" : 1627546531501,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

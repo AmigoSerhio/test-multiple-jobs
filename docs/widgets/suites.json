@@ -4,10 +4,10 @@
     "uid" : "68a2d0c32feaeeb750c4983b2abe9791",
     "name" : "Check Add Remove elements page defaults",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 2
     }

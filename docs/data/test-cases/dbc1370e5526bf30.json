@@ -1,0 +1,85 @@
+{
+  "uid" : "dbc1370e5526bf30",
+  "name" : "Verify Title",
+  "fullName" : "Verify broken images.Verify Title",
+  "historyId" : "45f0f7501c4d8895963f2046d2c1b1d5",
+  "time" : {
+    "start" : 1627586895335,
+    "stop" : 1627586895445,
+    "duration" : 110
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "testClass",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Title"
+  }, {
+    "name" : "package",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-92.0.4515.107"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "e394f75492ecd5b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627586302836,
+          "stop" : 1627586302931,
+          "duration" : 95
+        }
+      }, {
+        "uid" : "6cdff219d639a038",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627585497832,
+          "stop" : 1627585497940,
+          "duration" : 108
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dbc1370e5526bf30.json",
+  "parameterValues" : [ "chrome-92.0.4515.107" ]
+}

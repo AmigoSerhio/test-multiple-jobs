@@ -2,65 +2,13 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "Verify Title",
-    "uid" : "5bf238189299eb96",
+    "uid" : "66e708dc6f65e3b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1627568363340,
-      "stop" : 1627568363430,
-      "duration" : 90
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-92.0.4515.107" ]
-  }, {
-    "name" : "Check h3 header displayed",
-    "uid" : "2d20b9d1fa1bf892",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1627568425507,
-      "stop" : 1627568425600,
-      "duration" : 93
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-92.0.4515.107" ]
-  }, {
-    "name" : "Verify Add button",
-    "uid" : "21e2ff7034e91d6e",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1627568425600,
-      "stop" : 1627568425632,
-      "duration" : 32
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-92.0.4515.107" ]
-  }, {
-    "name" : "Add element",
-    "uid" : "d27368490eb5517",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1627568425637,
-      "stop" : 1627568425834,
-      "duration" : 197
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-92.0.4515.107" ]
-  }, {
-    "name" : "Remove element",
-    "uid" : "c5200dff456ba15c",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1627568425835,
-      "stop" : 1627568425960,
-      "duration" : 125
+      "start" : 1627570558558,
+      "stop" : 1627570558654,
+      "duration" : 96
     },
     "flaky" : false,
     "newFailed" : false,

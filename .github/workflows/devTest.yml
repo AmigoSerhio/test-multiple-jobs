@@ -24,16 +24,16 @@ jobs:
     - run: npm i
     - name: run test
       run: npm run test
-    - name: Create Report
-      if: always()
-    # trying to save history of previous runs if it is exists
-      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
     - name: Upload Artifact
       uses: actions/upload-artifact@v1
       if: always()
       with:
-        name: allure-report
-        path: ./allure-report
+        name: allure-results-test
+        path: ./allure-results
+    - name: Create Report
+      if: always()
+    # trying to save history of previous runs if it is exists
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()
@@ -59,16 +59,44 @@ jobs:
     - run: npm i
     - name: run test1
       run: npm run test1
-    - name: Create Report
-      if: always()
-    # trying to save history of previous runs if it is exists
-      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
     - name: Upload Artifact
       uses: actions/upload-artifact@v1
       if: always()
       with:
-        name: allure-report
-        path: ./allure-report
+        name: allure-results-test1
+        path: ./allure-results
+    - name: Create Report
+      if: always()
+    # trying to save history of previous runs if it is exists
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
+#     - name: Upload Artifact
+#       uses: actions/upload-artifact@v1
+#       if: always()
+#       with:
+#         name: allure-report
+#         path: ./allure-report
+  store_results_and_generate report:
+    needs: [test,test1]
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+    - run: npm i
+    - name: Download workflow artifacts from Github Actions
+    - uses: actions/checkout@v2
+    - uses: actions/download-artifact@v2
+    - name: 'Echo download path'
+      run: echo ${{steps.download.outputs.download-path}}
+    - name: Display structure of downloaded files
+      run: ls -R
+    - name: Unpack artifacts
+      if: always()
+      run: 7z x allure-results-test ./allure-results && 7z x allure-results-test1 ./allure-results
+    - name: Generate allure-report
+      if: always()
+      run: npm run allure:generate
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()

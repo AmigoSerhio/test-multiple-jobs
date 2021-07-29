@@ -104,6 +104,8 @@ jobs:
       run: ls -R
     - uses: actions/checkout@v2
     - run: npm i
+    - name: Display structure of downloaded files
+      run: ls -R
     - name: Generate allure-report
       if: always()
       run: npm run allure:generate

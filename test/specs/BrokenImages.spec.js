@@ -13,7 +13,7 @@ before('land to main url', () => {
 //#endregion
 describe('Verify broken images',()=>{
   it('Verify Title',()=>{
-    expect(brokenImages.isTitleDistpayed(h3Title)).true;
+    expect(brokenImages.isTitleDistpayed(h3Title)).false;
     expect(brokenImages.getHeaderText(h3Title)).contain(h3TitleTex);
   });
 });

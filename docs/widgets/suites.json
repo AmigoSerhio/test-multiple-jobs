@@ -1,6 +1,17 @@
 {
   "total" : 3,
   "items" : [ {
+    "uid" : "b905db4002c8c6dda459b8aae2298723",
+    "name" : "Verify broken images",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
     "uid" : "68a2d0c32feaeeb750c4983b2abe9791",
     "name" : "Check Add Remove elements page defaults",
     "statistic" : {
@@ -21,17 +32,6 @@
       "passed" : 2,
       "unknown" : 0,
       "total" : 2
-    }
-  }, {
-    "uid" : "b905db4002c8c6dda459b8aae2298723",
-    "name" : "Verify broken images",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
     }
   } ]
 }

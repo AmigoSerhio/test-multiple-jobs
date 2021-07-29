@@ -75,7 +75,7 @@ jobs:
 #       with:
 #         name: allure-report
 #         path: ./allure-report
-  store_results_and_generate report:
+  store_results_and_generate_report:
     needs: [test,test1]
     runs-on: ubuntu-20.04
     steps:

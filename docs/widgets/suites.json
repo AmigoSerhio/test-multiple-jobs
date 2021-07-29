@@ -1,15 +1,4 @@
 {
-  "total" : 1,
-  "items" : [ {
-    "uid" : "b905db4002c8c6dda459b8aae2298723",
-    "name" : "Verify broken images",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  } ]
+  "total" : 0,
+  "items" : [ ]
 }

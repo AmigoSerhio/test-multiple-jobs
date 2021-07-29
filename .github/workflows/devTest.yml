@@ -43,6 +43,7 @@ jobs:
         FOLDER: allure-report # The folder the action should deploy.
         TARGET_FOLDER: docs
   test1:
+    if: always()  
     needs: test
     runs-on: ubuntu-latest
     strategy:
@@ -76,6 +77,7 @@ jobs:
 #         name: allure-report
 #         path: ./allure-report
   store_results_and_generate_report:
+    if: always()
     needs: [test,test1]
     runs-on: ubuntu-latest
     strategy:

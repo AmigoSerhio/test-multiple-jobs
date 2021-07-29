@@ -93,6 +93,10 @@ jobs:
         cache: 'npm'
     - run: npm i
     - uses: actions/checkout@v2
+    - name: Display structure of downloaded files
+      run: ls -R
+    - uses: actions/checkout@v2
+    - run: npm i
     - uses: actions/download-artifact@v2
     - name: 'Echo download path'
       run: echo ${{steps.download.outputs.download-path}}
@@ -102,10 +106,6 @@ jobs:
       if: always()
 #       run: 7z x allure-results-test ./allure-results && 7z x allure-results-test1 ./allure-results
       run: cp -r allure-results-test/. ./allure-results && cp -r allure-results-test1/. ./allure-results   
-    - name: Display structure of downloaded files
-      run: ls -R
-    - uses: actions/checkout@v2
-    - run: npm i
     - name: Display structure of downloaded files
       run: ls -R
     - name: Generate allure-report

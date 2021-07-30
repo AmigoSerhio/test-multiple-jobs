@@ -1,0 +1,117 @@
+{
+  "uid" : "51cbbda1b3c14a86",
+  "name" : "Verify Add button",
+  "fullName" : "Check Add Remove elements page defaults.Verify Add button",
+  "historyId" : "9c12b6fbcfbdc26f0882b3f61a00b024",
+  "time" : {
+    "start" : 1627628980329,
+    "stop" : 1627628980369,
+    "duration" : 40
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Check Add Remove elements page defaults"
+  }, {
+    "name" : "testClass",
+    "value" : "Check Add Remove elements page defaults"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Add button"
+  }, {
+    "name" : "package",
+    "value" : "Check Add Remove elements page defaults"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-92.0.4515.107"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "57a91e084d1196e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627587442894,
+          "stop" : 1627587442937,
+          "duration" : 43
+        }
+      }, {
+        "uid" : "170a5d428b9841f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627587147929,
+          "stop" : 1627587147968,
+          "duration" : 39
+        }
+      }, {
+        "uid" : "dff63797c0d95f07",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627586948558,
+          "stop" : 1627586948581,
+          "duration" : 23
+        }
+      }, {
+        "uid" : "dd8de6304da9347f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627586364936,
+          "stop" : 1627586364990,
+          "duration" : 54
+        }
+      }, {
+        "uid" : "fe91c7a9d2424d5a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627586085940,
+          "stop" : 1627586085975,
+          "duration" : 35
+        }
+      }, {
+        "uid" : "c267830dad943fc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627585547132,
+          "stop" : 1627585547156,
+          "duration" : 24
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "51cbbda1b3c14a86.json",
+  "parameterValues" : [ "chrome-92.0.4515.107" ]
+}

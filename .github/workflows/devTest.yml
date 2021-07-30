@@ -148,14 +148,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
-    - name: Display structure of downloaded files
-      run: ls -R
     - name: Copy History
       if: always()
       run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history
     - name: Download artifacts
       if: always()
       uses: actions/download-artifact@v2
+    - name: Display structure of downloaded files
+      run: ls -R
     - name: Unpack artifacts
       if: always()
       run: sudo cp -r $(pwd)/allure-results-test/*.* $(pwd)/allure-results/ && sudo cp -r  $(pwd)/allure-results-test2/*.* $(pwd)/allure-results/ && sudo cp -r $(pwd)/allure-results-test1/*.* $(pwd)/allure-results/

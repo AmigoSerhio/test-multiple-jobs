@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Jul 30 07:44:21 UTC 2021","Fri Jul 30 07:44:21 UTC 2021","164","","Check Add Remove elements page defaults","","Check Add Remove elements page defaults","Check h3 header displayed","Check h3 header displayed",""
-"passed","Fri Jul 30 07:44:21 UTC 2021","Fri Jul 30 07:44:21 UTC 2021","54","","Check Add Remove elements page defaults","","Check Add Remove elements page defaults","Verify Add button","Verify Add button",""
-"passed","Fri Jul 30 07:44:21 UTC 2021","Fri Jul 30 07:44:21 UTC 2021","254","","Verify Add Remove elements","","Verify Add Remove elements","Add element","Add element",""
-"passed","Fri Jul 30 07:44:21 UTC 2021","Fri Jul 30 07:44:21 UTC 2021","185","","Verify Add Remove elements","","Verify Add Remove elements","Remove element","Remove element",""

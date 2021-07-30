@@ -149,41 +149,7 @@ jobs:
         destination-repository-name: 'HtmlActions'
         user-email: s.fart2012@gmail.com
         target-branch: main
-#   store_results_and_generate_report:
-#     if: always()
-#     needs: [test,test1]
-#     runs-on: ubuntu-latest
-#     strategy:
-#       matrix:
-#         node-version: [14.17.0]
-#         # See supported Node.js release schedule at https://nodejs.org/en/
-#     steps:
-#     - uses: actions/checkout@v2
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v2
-#       with:
-#         node-version: ${{ matrix.node-version }}
-#         cache: 'npm'
-#     - run: npm i
-#     - uses: actions/checkout@v2
-#     - name: Display structure of downloaded files
-#       run: ls -R
-#     - uses: actions/checkout@v2
-#     - run: npm i
-#     - uses: actions/download-artifact@v2
-#     - name: 'Echo download path'
-#       run: echo ${{steps.download.outputs.download-path}}
-#     - name: Display structure of downloaded files
-#       run: ls -R
-#     - name: Unpack artifacts
-#       if: always()
-# #       run: 7z x allure-results-test ./allure-results && 7z x allure-results-test1 ./allure-results
-#       run: cp -r allure-results-test/. ./allure-results && cp -r allure-results-test1/. ./allure-results   
-#     - name: Display structure of downloaded files
-#       run: ls -R
-#     - name: Generate allure-report
-#       if: always()
-#       run: npm run allure:generate
+
 #     - name: Deploy report
 #       uses: JamesIves/github-pages-deploy-action@3.1.0
 #       if: always()

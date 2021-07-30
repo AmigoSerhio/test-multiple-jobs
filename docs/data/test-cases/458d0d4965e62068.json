@@ -1,0 +1,76 @@
+{
+  "uid" : "458d0d4965e62068",
+  "name" : "Verify Title",
+  "fullName" : "Verify broken images.Verify Title",
+  "historyId" : "45f0f7501c4d8895963f2046d2c1b1d5",
+  "time" : {
+    "start" : 1627631613678,
+    "stop" : 1627631613857,
+    "duration" : 179
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected true to be false",
+  "statusTrace" : "AssertionError: expected true to be false\n                    at Context.<anonymous> (/home/runner/work/test-multiple-jobs/test-multiple-jobs/test/specs/BrokenImages.spec.js:16:51)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected true to be false",
+    "statusTrace" : "AssertionError: expected true to be false\n                    at Context.<anonymous> (/home/runner/work/test-multiple-jobs/test-multiple-jobs/test/specs/BrokenImages.spec.js:16:51)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "edc385103520be2c",
+      "name" : "Screenshot",
+      "source" : "edc385103520be2c.png",
+      "type" : "image/png",
+      "size" : 25436
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "testClass",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Title"
+  }, {
+    "name" : "package",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-92.0.4515.107"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "458d0d4965e62068.json",
+  "parameterValues" : [ "chrome-92.0.4515.107" ]
+}

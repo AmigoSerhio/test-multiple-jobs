@@ -1,51 +1,51 @@
 [ {
-  "uid" : "76d16bc5fe9a72fe",
-  "name" : "Remove element",
-  "time" : {
-    "start" : 1627631459682,
-    "stop" : 1627631459846,
-    "duration" : 164
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ef527b501b49db95",
+  "uid" : "45ad015050b0ec68",
   "name" : "Verify Add button",
   "time" : {
-    "start" : 1627631459480,
-    "stop" : 1627631459512,
-    "duration" : 32
+    "start" : 1627631706724,
+    "stop" : 1627631706754,
+    "duration" : 30
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "be8a21b13cfe2d27",
+  "uid" : "ea3c1bb2e170394c",
   "name" : "Check h3 header displayed",
   "time" : {
-    "start" : 1627631459352,
-    "stop" : 1627631459480,
-    "duration" : 128
+    "start" : 1627631706608,
+    "stop" : 1627631706724,
+    "duration" : 116
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1e45bac226eb4a18",
-  "name" : "Verify Title",
-  "time" : {
-    "start" : 1627631397141,
-    "stop" : 1627631397295,
-    "duration" : 154
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "8b0852e420dd8a7b",
+  "uid" : "7405541e52a868ff",
   "name" : "Add element",
   "time" : {
-    "start" : 1627631459520,
-    "stop" : 1627631459681,
-    "duration" : 161
+    "start" : 1627631706761,
+    "stop" : 1627631706912,
+    "duration" : 151
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cfa0de75056f589",
+  "name" : "Remove element",
+  "time" : {
+    "start" : 1627631706912,
+    "stop" : 1627631707037,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d35253353dba959f",
+  "name" : "Verify Title",
+  "time" : {
+    "start" : 1627631653352,
+    "stop" : 1627631653479,
+    "duration" : 127
+  },
+  "status" : "failed",
   "severity" : "normal"
 } ]

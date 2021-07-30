@@ -48,6 +48,8 @@ jobs:
         FOLDER: allure-report # The folder the action should deploy.
         TARGET_FOLDER: docs
   test2:
+    if: always()  
+    needs: test
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -88,7 +90,7 @@ jobs:
         TARGET_FOLDER: docs
   test1:
     if: always()  
-    needs: test
+    needs: [test, test2]
     runs-on: ubuntu-latest
     strategy:
       matrix:

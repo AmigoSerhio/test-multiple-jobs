@@ -27,7 +27,7 @@ jobs:
     - name: Copy History
       if: always()
     # trying to save history of previous runs if it is exists
-      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history 
     - name: Display structure of downloaded files
       run: ls -R
     - name: Upload Artifact
@@ -36,9 +36,9 @@ jobs:
       with:
         name: allure-results-test
         path: ./allure-results        
-#     - name: Generate Report
-#       if: always()
-#       run: npm run allure:generate    
+    - name: Generate Report
+      if: always()
+      run: npm run allure:generate    
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()

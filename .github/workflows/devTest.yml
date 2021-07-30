@@ -118,7 +118,41 @@ jobs:
         name: allure-results-test1
         path: ./allure-results
 #     - uses: actions/checkout@v2
-#     - run: npm i
+#     - run: npm i  
+    - name: Display structure of downloaded files
+      run: ls -R
+    - name: Generate Report
+      if: always()
+      run: npm run allure:generate
+    - name: Deploy report
+      uses: JamesIves/github-pages-deploy-action@3.1.0
+      if: always()
+      with:
+        ACCESS_TOKEN: ${{ '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' }}
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: allure-report # The folder the action should 
+        TARGET_FOLDER: docs
+  resuts:
+    if: always()  
+    needs: [test, test2, test1]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.17.0]
+        # See supported Node.js release schedule at https://nodejs.org/en/
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm i
+    - name: Display structure of downloaded files
+      run: ls -R
+    - name: Copy History
+      if: always()
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history
     - name: Download artifacts
       if: always()
       uses: actions/download-artifact@v2

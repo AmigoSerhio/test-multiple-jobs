@@ -124,7 +124,7 @@ jobs:
       uses: actions/download-artifact@v2
     - name: Unpack artifacts
       if: always()
-      run: cp -r $(pwd)/allure-results-test/*.* $(pwd)/allure-results/ && cp -r $(pwd)/allure-results-test1/*.* $(pwd)/allure-results/ && $(pwd)/allure-results-test2/*.* $(pwd)/allure-results/
+      run: cp -r $(pwd)/allure-results-test/*.* $(pwd)/allure-results/ && $(pwd)/allure-results-test2/*.* $(pwd)/allure-results/ && cp -r $(pwd)/allure-results-test1/*.* $(pwd)/allure-results/
     - name: Display structure of downloaded files
       run: ls -R
     - name: Generate Report

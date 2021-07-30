@@ -36,9 +36,9 @@ jobs:
       with:
         name: allure-results-test
         path: ./allure-results        
-    - name: Generate Report
-      if: always()
-      run: npm run allure:generate    
+#     - name: Generate Report
+#       if: always()
+#       run: npm run allure:generate    
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()

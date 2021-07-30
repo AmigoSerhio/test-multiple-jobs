@@ -1,1 +1,51 @@
-[ ]
+[ {
+  "uid" : "ec056e122c31cae5",
+  "name" : "Add element",
+  "time" : {
+    "start" : 1627634210931,
+    "stop" : 1627634211136,
+    "duration" : 205
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47822860ff253b24",
+  "name" : "Verify Title",
+  "time" : {
+    "start" : 1627634150424,
+    "stop" : 1627634150680,
+    "duration" : 256
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb81f5056be9e0e4",
+  "name" : "Remove element",
+  "time" : {
+    "start" : 1627634211136,
+    "stop" : 1627634211287,
+    "duration" : 151
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f27e735fa1f59331",
+  "name" : "Verify Add button",
+  "time" : {
+    "start" : 1627634210897,
+    "stop" : 1627634210925,
+    "duration" : 28
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc080cf54c716dc3",
+  "name" : "Check h3 header displayed",
+  "time" : {
+    "start" : 1627634210771,
+    "stop" : 1627634210897,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

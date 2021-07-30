@@ -1,0 +1,91 @@
+{
+  "uid" : "47822860ff253b24",
+  "name" : "Verify Title",
+  "fullName" : "Verify broken images.Verify Title",
+  "historyId" : "45f0f7501c4d8895963f2046d2c1b1d5",
+  "time" : {
+    "start" : 1627634150424,
+    "stop" : 1627634150680,
+    "duration" : 256
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected true to be false",
+  "statusTrace" : "AssertionError: expected true to be false\n                    at Context.<anonymous> (/home/runner/work/test-multiple-jobs/test-multiple-jobs/test/specs/BrokenImages.spec.js:16:51)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected true to be false",
+    "statusTrace" : "AssertionError: expected true to be false\n                    at Context.<anonymous> (/home/runner/work/test-multiple-jobs/test-multiple-jobs/test/specs/BrokenImages.spec.js:16:51)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "300a1a7432354012",
+      "name" : "Screenshot",
+      "source" : "300a1a7432354012.png",
+      "type" : "image/png",
+      "size" : 25436
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "testClass",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Title"
+  }, {
+    "name" : "package",
+    "value" : "Verify broken images"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-92.0.4515.107"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2d178e1a52522a5b",
+      "status" : "failed",
+      "statusDetails" : "expected true to be false",
+      "time" : {
+        "start" : 1627634093268,
+        "stop" : 1627634093436,
+        "duration" : 168
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "47822860ff253b24.json",
+  "parameterValues" : [ "chrome-92.0.4515.107" ]
+}

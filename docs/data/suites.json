@@ -1,5 +1,82 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Verify broken images",
+    "children" : [ {
+      "name" : "Verify Title",
+      "uid" : "47822860ff253b24",
+      "parentUid" : "b905db4002c8c6dda459b8aae2298723",
+      "status" : "failed",
+      "time" : {
+        "start" : 1627634150424,
+        "stop" : 1627634150680,
+        "duration" : 256
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-92.0.4515.107" ]
+    } ],
+    "uid" : "b905db4002c8c6dda459b8aae2298723"
+  }, {
+    "name" : "Check Add Remove elements page defaults",
+    "children" : [ {
+      "name" : "Check h3 header displayed",
+      "uid" : "bc080cf54c716dc3",
+      "parentUid" : "68a2d0c32feaeeb750c4983b2abe9791",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627634210771,
+        "stop" : 1627634210897,
+        "duration" : 126
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-92.0.4515.107" ]
+    }, {
+      "name" : "Verify Add button",
+      "uid" : "f27e735fa1f59331",
+      "parentUid" : "68a2d0c32feaeeb750c4983b2abe9791",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627634210897,
+        "stop" : 1627634210925,
+        "duration" : 28
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-92.0.4515.107" ]
+    } ],
+    "uid" : "68a2d0c32feaeeb750c4983b2abe9791"
+  }, {
+    "name" : "Verify Add Remove elements",
+    "children" : [ {
+      "name" : "Add element",
+      "uid" : "ec056e122c31cae5",
+      "parentUid" : "6121e9287cbfa25d4a6d00f6ef251f07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627634210931,
+        "stop" : 1627634211136,
+        "duration" : 205
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-92.0.4515.107" ]
+    }, {
+      "name" : "Remove element",
+      "uid" : "fb81f5056be9e0e4",
+      "parentUid" : "6121e9287cbfa25d4a6d00f6ef251f07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627634211136,
+        "stop" : 1627634211287,
+        "duration" : 151
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-92.0.4515.107" ]
+    } ],
+    "uid" : "6121e9287cbfa25d4a6d00f6ef251f07"
+  } ],
   "name" : "suites"
 }

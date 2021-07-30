@@ -149,23 +149,3 @@ jobs:
         destination-repository-name: 'HtmlActions'
         user-email: s.fart2012@gmail.com
         target-branch: main
-
-#     - name: Deploy report
-#       uses: JamesIves/github-pages-deploy-action@3.1.0
-#       if: always()
-#       with:
-#         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
-#         BRANCH: master # The branch the action should deploy to.
-#         FOLDER: allure-report # The folder the action should deploy.
-#         TARGET_FOLDER: docs
-#     - name: Pushes docs to another repository
-#       uses: cpina/github-action-push-to-another-repository@main
-#       if: always()
-#       env:
-#         API_TOKEN_GITHUB: ${{secrets.API_TOKEN_GITHUB}}
-#       with:
-#         source-directory: 'docs'
-#         destination-github-username: 'ToActions'
-#         destination-repository-name: 'HtmlActions'
-#         user-email: s.fart2012@gmail.com
-#         target-branch: main

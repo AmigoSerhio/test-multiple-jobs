@@ -36,9 +36,48 @@ jobs:
       with:
         name: allure-results-test
         path: ./allure-results        
-#     - name: Generate Report
-#       if: always()
-#       run: npm run allure:generate    
+    - name: Generate Report
+      if: always()
+      run: npm run allure:generate    
+    - name: Deploy report
+      uses: JamesIves/github-pages-deploy-action@3.1.0
+      if: always()
+      with:
+        ACCESS_TOKEN: ${{ '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' }}
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: allure-report # The folder the action should deploy.
+        TARGET_FOLDER: docs
+  test2:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.17.0]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm i
+    - name: run test
+      run: npm run test      
+    - name: Copy History
+      if: always()
+    # trying to save history of previous runs if it is exists
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history 
+    - name: Display structure of downloaded files
+      run: ls -R
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v1
+      if: always()
+      with:
+        name: allure-results-test2
+        path: ./allure-results        
+    - name: Generate Report
+      if: always()
+      run: npm run allure:generate    
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.1.0
       if: always()
@@ -83,7 +122,7 @@ jobs:
       uses: actions/download-artifact@v2
     - name: Unpack artifacts
       if: always()
-      run: cp -r $(pwd)/allure-results-test/*.* $(pwd)/allure-results/ && cp -r $(pwd)/allure-results-test1/*.* $(pwd)/allure-results/
+      run: cp -r $(pwd)/allure-results-test/*.* $(pwd)/allure-results/ && cp -r $(pwd)/allure-results-test1/*.* $(pwd)/allure-results/ && $(pwd)/allure-results-test2/*.* $(pwd)/allure-results/
     - name: Display structure of downloaded files
       run: ls -R
     - name: Generate Report

@@ -13,7 +13,6 @@ jobs:
     strategy:
       matrix:
         node-version: [14.17.0]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -26,7 +25,6 @@ jobs:
       run: npm run test      
     - name: Copy History
       if: always()
-    # trying to save history of previous runs if it is exists
       run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history 
     - name: Display structure of downloaded files
       run: ls -R

@@ -25,10 +25,10 @@ jobs:
       run: npm run test      
     - name: Copy History
       if: always()
-      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history 
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history # it copies old histoty to the current results to make report with history
     - name: Display structure of downloaded files
       run: ls -R
-    - name: Upload Artifact
+    - name: Upload Artifact   #we need to upload ./allure-results to make report with all jobs at the last job
       uses: actions/upload-artifact@v1
       if: always()
       with:
@@ -36,9 +36,9 @@ jobs:
         path: ./allure-results        
     - name: Generate Report
       if: always()
-      run: npm run allure:generate    
+      run: npm run allure:generate    #generates report for current job with history of past runs
     - name: Deploy report
-      uses: JamesIves/github-pages-deploy-action@3.1.0
+      uses: JamesIves/github-pages-deploy-action@3.1.0  #deploy current report (need it to take history from ./docs/history)
       if: always()
       with:
         ACCESS_TOKEN: ${{ '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' }}
@@ -117,26 +117,26 @@ jobs:
         path: ./allure-results
 #     - uses: actions/checkout@v2
 #     - run: npm i
-    - name: Download artifacts
+    - name: Download artifacts  #download all artifacts from current workflow to current proj dir at the VM
       if: always()
       uses: actions/download-artifact@v2
-    - name: Unpack artifacts
+    - name: Unpack artifacts #this copies results of all jobs but dont copy history (/*.*  only files with extension)
       if: always()
       run: sudo cp -r $(pwd)/allure-results-test/*.* $(pwd)/allure-results/ && sudo cp -r  $(pwd)/allure-results-test2/*.* $(pwd)/allure-results/ && sudo cp -r $(pwd)/allure-results-test1/*.* $(pwd)/allure-results/
     - name: Display structure of downloaded files
       run: ls -R
-    - name: Generate Report
+    - name: Generate Report   #this generates our final report with all jobs results and histories
       if: always()
       run: npm run allure:generate
-    - name: Deploy report
-      uses: JamesIves/github-pages-deploy-action@3.1.0
+    - name: Deploy report      
+      uses: JamesIves/github-pages-deploy-action@3.1.0  #deploy final report so we could see all jobs results
       if: always()
       with:
         ACCESS_TOKEN: ${{ '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' }}
         BRANCH: master # The branch the action should deploy to.
         FOLDER: allure-report # The folder the action should 
         TARGET_FOLDER: docs
-    - name: Pushes docs to another repository
+    - name: Pushes docs to another repository           #if needs we may deploy report from closed repo to open repo with configured GH Pages (if you dont use GH Enterprise you cant use GH pages on closed repo)
       uses: cpina/github-action-push-to-another-repository@main
       if: always()
       env:
